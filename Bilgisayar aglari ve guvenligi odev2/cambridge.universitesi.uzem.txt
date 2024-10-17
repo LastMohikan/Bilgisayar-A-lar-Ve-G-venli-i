@@ -1,0 +1,45 @@
+# Nmap 7.94SVN scan initiated Sun Oct 13 09:46:07 2024 as: nmap -vvv -p 21,80,443 -sV -oN cambridge.universitesi.uzem.txt 128.232.132.21
+Nmap scan report for tm-128-232-132-21.tm.uis.cam.ac.uk (128.232.132.21)
+Host is up, received syn-ack (0.067s latency).
+Scanned at 2024-10-13 09:46:15 EDT for 63s
+
+PORT    STATE SERVICE  REASON  VERSION
+21/tcp  open  ftp?     syn-ack
+80/tcp  open  http     syn-ack
+443/tcp open  ssl/http syn-ack Apache httpd (RHEL)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94SVN%I=7%D=10/13%Time=670BCF2D%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,93,"HTTP/1\.1\x20301\x20Redirect\r\nContent-Type:\x20text/pl
+SF:ain\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x2013:46:20\x20GMT\r\nLocatio
+SF:n:\x20https:///\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n
+SF:")%r(HTTPOptions,93,"HTTP/1\.1\x20301\x20Redirect\r\nContent-Type:\x20t
+SF:ext/plain\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x2013:46:20\x20GMT\r\nL
+SF:ocation:\x20https:///\r\nConnection:\x20close\r\nContent-Length:\x200\r
+SF:\n\r\n")%r(RTSPRequest,98,"HTTP/1\.1\x20301\x20Redirect\r\nContent-Type
+SF::\x20text/plain\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x2013:46:21\x20GM
+SF:T\r\nLocation:\x20https:///\r\nConnection:\x20Keep-Alive\r\nContent-Len
+SF:gth:\x200\r\n\r\n")%r(X11Probe,59,"HTTP/1\.0\x20400\x20Bad\x20request\r
+SF:\nContent-Type:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20r
+SF:equest\.</h2>\n")%r(FourOhFourRequest,B6,"HTTP/1\.1\x20301\x20Redirect\
+SF:r\nContent-Type:\x20text/plain\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x2
+SF:013:46:26\x20GMT\r\nLocation:\x20https:///nice%20ports%2C/Tri%6Eity\.tx
+SF:t%2ebak\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n")%r(RPC
+SF:Check,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Type:\x20text/h
+SF:tml\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n")%r(DNSVe
+SF:rsionBindReqTCP,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Type:
+SF:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n
+SF:")%r(DNSStatusRequestTCP,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nCont
+SF:ent-Type:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20request
+SF:\.</h2>\n")%r(SSLSessionReq,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nC
+SF:ontent-Type:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20requ
+SF:est\.</h2>\n")%r(TerminalServerCookie,59,"HTTP/1\.0\x20400\x20Bad\x20re
+SF:quest\r\nContent-Type:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20b
+SF:ad\x20request\.</h2>\n")%r(TLSSessionReq,59,"HTTP/1\.0\x20400\x20Bad\x2
+SF:0request\r\nContent-Type:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x
+SF:20bad\x20request\.</h2>\n")%r(Kerberos,59,"HTTP/1\.0\x20400\x20Bad\x20r
+SF:equest\r\nContent-Type:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20
+SF:bad\x20request\.</h2>\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 13 09:47:18 2024 -- 1 IP address (1 host up) scanned in 71.45 seconds

@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Sun Oct 13 09:01:46 2024 as: nmap -vvv -p 21,80,443 -sV -oN cumhuriyet.universitesi.anasayfa.txt 193.140.145.23
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?.*\r\nServer: Virata-EmWeb/R([\d_]+)\r\nContent-Type: text/html; ?charset=UTF-8\r\nExpires: .*<title>HP (Color |)LaserJet ([\w._ -]+)&nbsp;&nbsp;&nbsp;'
+Nmap scan report for www.cumhuriyet.edu.tr (193.140.145.23)
+Host is up, received syn-ack (0.026s latency).
+Scanned at 2024-10-13 09:01:53 EDT for 55s
+
+PORT    STATE SERVICE  REASON  VERSION
+21/tcp  open  ftp?     syn-ack
+80/tcp  open  http     syn-ack nginx 1.23.1
+443/tcp open  ssl/http syn-ack nginx 1.23.1
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 13 09:02:48 2024 -- 1 IP address (1 host up) scanned in 61.47 seconds

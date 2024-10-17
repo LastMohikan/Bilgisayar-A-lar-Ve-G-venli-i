@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Sun Oct 13 09:15:06 2024 as: nmap -vvv -p 21,80 -sV -oN bayburt.universitesi.uzem.txt 95.183.130.126
+Nmap scan report for 95.183.130.126
+Host is up, received syn-ack (0.031s latency).
+Scanned at 2024-10-13 09:15:12 EDT for 76s
+
+PORT   STATE SERVICE REASON  VERSION
+21/tcp open  ftp?    syn-ack
+80/tcp open  http    syn-ack Microsoft IIS httpd 8.5
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 13 09:16:28 2024 -- 1 IP address (1 host up) scanned in 82.00 seconds

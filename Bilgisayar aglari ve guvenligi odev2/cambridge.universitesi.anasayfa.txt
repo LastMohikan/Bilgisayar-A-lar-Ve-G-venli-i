@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Sun Oct 13 09:41:04 2024 as: nmap -vvv -p 21,22,80,443 -sV -oN cambridge.universitesi.anasayfa.txt 101.53.142.196
+Nmap scan report for e2e-39-196.ssdcloudindia.net (101.53.142.196)
+Host is up, received syn-ack (0.20s latency).
+Scanned at 2024-10-13 09:41:12 EDT for 57s
+
+PORT    STATE SERVICE  REASON  VERSION
+21/tcp  open  ftp?     syn-ack
+22/tcp  open  ssh      syn-ack OpenSSH 7.4 (protocol 2.0)
+80/tcp  open  http     syn-ack nginx 1.12.2
+443/tcp open  ssl/http syn-ack nginx 1.12.2
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 13 09:42:09 2024 -- 1 IP address (1 host up) scanned in 64.63 seconds

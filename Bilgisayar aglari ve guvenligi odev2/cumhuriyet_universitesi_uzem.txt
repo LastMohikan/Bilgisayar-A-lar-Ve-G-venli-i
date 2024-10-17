@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Sun Oct 13 08:56:38 2024 as: nmap -vvv -p 21,80,443 -sV -oN cumhuriyet_universitesi_uzem.txt 193.140.145.170
+Nmap scan report for lms.cumhuriyet.edu.tr (193.140.145.170)
+Host is up, received syn-ack (0.026s latency).
+Scanned at 2024-10-13 08:56:45 EDT for 53s
+
+PORT    STATE SERVICE  REASON  VERSION
+21/tcp  open  ftp?     syn-ack
+80/tcp  open  http     syn-ack nginx 1.23.1
+443/tcp open  ssl/http syn-ack nginx 1.23.1
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 13 08:57:38 2024 -- 1 IP address (1 host up) scanned in 59.60 seconds

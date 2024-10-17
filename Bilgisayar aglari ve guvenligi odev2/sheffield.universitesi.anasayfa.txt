@@ -1,0 +1,56 @@
+# Nmap 7.94SVN scan initiated Sun Oct 13 09:22:59 2024 as: nmap -vvv -p 21,80,443 -sV -oN sheffield.universitesi.anasayfa.txt 143.167.2.102
+Nmap scan report for uuu.shef.ac.uk (143.167.2.102)
+Host is up, received syn-ack (0.066s latency).
+Scanned at 2024-10-13 09:23:05 EDT for 74s
+
+PORT    STATE SERVICE   REASON  VERSION
+21/tcp  open  ftp?      syn-ack
+80/tcp  open  http      syn-ack
+443/tcp open  ssl/https syn-ack
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=10/13%Time=670BC9C0%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,AE,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nContent-Type
+SF::\x20text/html\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x2013:23:11\x20GMT
+SF:\r\nLocation:\x20https://www\.sheffield\.ac\.uk/\r\nConnection:\x20clos
+SF:e\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,AE,"HTTP/1\.1\x20301\
+SF:x20Moved\x20Permanently\r\nContent-Type:\x20text/html\r\nDate:\x20Sun,\
+SF:x2013\x20Oct\x202024\x2013:23:11\x20GMT\r\nLocation:\x20https://www\.sh
+SF:effield\.ac\.uk/\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\
+SF:n")%r(RTSPRequest,B3,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nConte
+SF:nt-Type:\x20text/html\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x2013:23:11
+SF:\x20GMT\r\nLocation:\x20https://www\.sheffield\.ac\.uk/\r\nConnection:\
+SF:x20Keep-Alive\r\nContent-Length:\x200\r\n\r\n")%r(X11Probe,59,"HTTP/1\.
+SF:0\x20400\x20Bad\x20request\r\nContent-Type:\x20text/html\r\n\r\n<h2>Cli
+SF:ent\x20sent\x20a\x20bad\x20request\.</h2>\n")%r(FourOhFourRequest,D1,"H
+SF:TTP/1\.1\x20301\x20Moved\x20Permanently\r\nContent-Type:\x20text/html\r
+SF:\nDate:\x20Sun,\x2013\x20Oct\x202024\x2013:23:16\x20GMT\r\nLocation:\x2
+SF:0https://www\.sheffield\.ac\.uk/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\
+SF:nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n")%r(RPCCheck,59,"
+SF:HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Type:\x20text/html\r\n\r\
+SF:n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n")%r(DNSVersionBindR
+SF:eqTCP,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Type:\x20text/h
+SF:tml\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n")%r(DNSSt
+SF:atusRequestTCP,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Type:\
+SF:x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n"
+SF:)%r(SSLSessionReq,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Typ
+SF:e:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>
+SF:\n")%r(TerminalServerCookie,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nC
+SF:ontent-Type:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20requ
+SF:est\.</h2>\n")%r(TLSSessionReq,59,"HTTP/1\.0\x20400\x20Bad\x20request\r
+SF:\nContent-Type:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20r
+SF:equest\.</h2>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=10/13%Time=670BC9CD%P=x86_64-pc-linux
+SF:-gnu%r(RTSPRequest,B3,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nCont
+SF:ent-Type:\x20text/html\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x2013:23:1
+SF:9\x20GMT\r\nLocation:\x20https://www\.sheffield\.ac\.uk/\r\nConnection:
+SF:\x20Keep-Alive\r\nContent-Length:\x200\r\n\r\n")%r(SIPOptions,B8,"HTTP/
+SF:1\.1\x20301\x20Moved\x20Permanently\r\nContent-Type:\x20text/html\r\nDa
+SF:te:\x20Sun,\x2013\x20Oct\x202024\x2013:23:36\x20GMT\r\nLocation:\x20htt
+SF:ps://www\.sheffield\.ac\.uksip:nm\r\nConnection:\x20Keep-Alive\r\nConte
+SF:nt-Length:\x200\r\n\r\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 13 09:24:19 2024 -- 1 IP address (1 host up) scanned in 80.71 seconds

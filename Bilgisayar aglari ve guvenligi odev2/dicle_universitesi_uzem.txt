@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Sun Oct 13 08:51:14 2024 as: nmap -vvv -p 21,80,443 -sV -oN dicle_universitesi_uzem.txt 193.140.240.40
+Nmap scan report for 193.140.240.40
+Host is up, received syn-ack (0.032s latency).
+Scanned at 2024-10-13 08:51:21 EDT for 60s
+
+PORT    STATE SERVICE  REASON  VERSION
+21/tcp  open  ftp?     syn-ack
+80/tcp  open  http     syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+443/tcp open  ssl/http syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 13 08:52:21 2024 -- 1 IP address (1 host up) scanned in 67.13 seconds

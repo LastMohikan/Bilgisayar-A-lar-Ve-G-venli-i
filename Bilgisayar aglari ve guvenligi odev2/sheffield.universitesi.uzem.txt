@@ -1,0 +1,73 @@
+# Nmap 7.94SVN scan initiated Sun Oct 13 09:32:00 2024 as: nmap -vvv -p 21,80,443 -sV -oN sheffield.universitesi.uzem.txt 143.167.2.111
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service upnp with the regex '^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?.*SERVER: Linux/([\w._+-]+), UPnP/([\d.]+), Intel UPnP SDK/([\w._~-]+)\r\n'
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?.*\r\nServer: Virata-EmWeb/R([\d_]+)\r\nContent-Type: text/html; ?charset=UTF-8\r\nExpires: .*<title>HP (Color |)LaserJet ([\w._ -]+)&nbsp;&nbsp;&nbsp;'
+Nmap scan report for login-lb.shef.ac.uk (143.167.2.111)
+Host is up, received syn-ack (0.067s latency).
+Scanned at 2024-10-13 09:32:07 EDT for 63s
+
+PORT    STATE SERVICE   REASON  VERSION
+21/tcp  open  ftp?      syn-ack
+80/tcp  open  http      syn-ack
+443/tcp open  ssl/https syn-ack Apereo CAS
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=10/13%Time=670BCBDD%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,9B,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nContent-Type
+SF::\x20text/html\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x2013:32:12\x20GMT
+SF:\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nContent-Length:\x
+SF:200\r\n\r\n")%r(HTTPOptions,9B,"HTTP/1\.1\x20301\x20Moved\x20Permanentl
+SF:y\r\nContent-Type:\x20text/html\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x
+SF:2013:32:12\x20GMT\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n
+SF:Content-Length:\x200\r\n\r\n")%r(RTSPRequest,A0,"HTTP/1\.1\x20301\x20Mo
+SF:ved\x20Permanently\r\nContent-Type:\x20text/html\r\nDate:\x20Sun,\x2013
+SF:\x20Oct\x202024\x2013:32:13\x20GMT\r\nLocation:\x20https:///\r\nConnect
+SF:ion:\x20Keep-Alive\r\nContent-Length:\x200\r\n\r\n")%r(X11Probe,59,"HTT
+SF:P/1\.0\x20400\x20Bad\x20request\r\nContent-Type:\x20text/html\r\n\r\n<h
+SF:2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n")%r(FourOhFourRequest,
+SF:BE,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nContent-Type:\x20text/h
+SF:tml\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x2013:32:18\x20GMT\r\nLocatio
+SF:n:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20c
+SF:lose\r\nContent-Length:\x200\r\n\r\n")%r(RPCCheck,59,"HTTP/1\.0\x20400\
+SF:x20Bad\x20request\r\nContent-Type:\x20text/html\r\n\r\n<h2>Client\x20se
+SF:nt\x20a\x20bad\x20request\.</h2>\n")%r(DNSVersionBindReqTCP,59,"HTTP/1\
+SF:.0\x20400\x20Bad\x20request\r\nContent-Type:\x20text/html\r\n\r\n<h2>Cl
+SF:ient\x20sent\x20a\x20bad\x20request\.</h2>\n")%r(DNSStatusRequestTCP,59
+SF:,"HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Type:\x20text/html\r\n\
+SF:r\n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n")%r(SSLSessionReq
+SF:,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Type:\x20text/html\r
+SF:\n\r\n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n")%r(TerminalSe
+SF:rverCookie,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Type:\x20t
+SF:ext/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n")%r(
+SF:TLSSessionReq,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Type:\x
+SF:20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n")
+SF:%r(Kerberos,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nContent-Type:\x20
+SF:text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20request\.</h2>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=10/13%Time=670BCBE4%P=x86_64-pc-linux
+SF:-gnu%r(FourOhFourRequest,4019,"HTTP/1\.1\x20404\x20\r\nServer:\x20Apere
+SF:o\x20CAS\r\nContent-Type:\x20text/html\r\nStrict-Transport-Security:\x2
+SF:0max-age=31536000;\x20preload\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x20
+SF:13:32:19\x20GMT\r\nKeep-Alive:\x20timeout=20\r\nContent-Language:\x20en
+SF:\r\nConnection:\x20close\r\nContent-Length:\x2050537\r\n\r\n<!DOCTYPE\x
+SF:20html>\n<html\x20lang=\"en\"\x20dir=\"ltr\">\n\n<head>\n\t<meta\x20cha
+SF:rset=\"utf-8\"\x20/>\n\n\t<meta\x20name=\"MobileOptimized\"\x20content=
+SF:\"width\"\x20/>\n\t<meta\x20name=\"HandheldFriendly\"\x20content=\"true
+SF:\"\x20/>\n\t<meta\x20name=\"viewport\"\x20content=\"width=device-width,
+SF:\x20initial-scale=1\.0\"\x20/>\n\n\t<link\x20rel=\"icon\"\x20href=\"htt
+SF:ps://www\.sheffield\.ac\.uk/themes/custom/uos/favicon\.ico\"\x20sizes=\
+SF:"any\">\n\t<link\x20rel=\"icon\"\x20href=\"https://www\.sheffield\.ac\.
+SF:uk/themes/custom/uos/favicon\.svg\"\x20type=\"image/svg\+xml\"\x20/>\n\
+SF:n\t<title>404\x20Error\x20\|\x20University\x20of\x20Sheffield</title>\n
+SF:\n\t<style>\n\n\t\thtml\x20{\n\t\t\tfont-family:\x20\"Source\x20Sans\x2
+SF:0Pro\",\x20sans-serif;\n\t\t\tline-height:\x201\.15;\n\t\t\t-ms-text-si
+SF:ze-adjust:\x20100%;\n\t\t\t-webkit-text-size-adjust:\x20100")%r(RTSPReq
+SF:uest,A1,"HTTP/1\.1\x20302\x20Moved\x20Temporarily\r\nContent-Type:\x20t
+SF:ext/html\r\nDate:\x20Sun,\x2013\x20Oct\x202024\x2013:32:21\x20GMT\r\nLo
+SF:cation:\x20/cas/login\r\nConnection:\x20Keep-Alive\r\nContent-Length:\x
+SF:200\r\n\r\n")%r(oracle-tns,59,"HTTP/1\.0\x20400\x20Bad\x20request\r\nCo
+SF:ntent-Type:\x20text/html\r\n\r\n<h2>Client\x20sent\x20a\x20bad\x20reque
+SF:st\.</h2>\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 13 09:33:10 2024 -- 1 IP address (1 host up) scanned in 70.02 seconds
